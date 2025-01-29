@@ -15,8 +15,9 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Instalar dependencias
-        run: pip install hashlib
+      # - name: Instalar dependencias
+      # - run: pip install hashlib  # No es necesario, hashlib viene en la librería estándar
+
 
       - name: Ejecutar script
         run: python random_hash.py
